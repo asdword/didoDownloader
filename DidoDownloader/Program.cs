@@ -22,7 +22,8 @@ namespace DidoDownloader
             string videpUrl = null;
             string key = "videoSourceUrl";
             bool hightQuality = false;
-            string savePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\didoVideos";
+            string savePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\didoVideos\\video-"+DateTime.Now.Ticks+".mp4";
+            System.IO.Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\didoVideos\\");
             string command = null;
             if (args.Length == 0)
                 DisplayHelp();
@@ -75,6 +76,8 @@ namespace DidoDownloader
             Console.WriteLine("\n samples:");
             Console.WriteLine("\t dido -url[dido url]");
             Console.WriteLine("\t dido -url[dido url] -path[path save]");
+            Environment.Exit(0);
+
         }
 
         public static void initDido(string videpUrl, string savePath, string key, bool hightQuality)
@@ -162,7 +165,7 @@ namespace DidoDownloader
             if (e.ProgressPercentage > DownloadPercentage)
             {
                 DownloadPercentage = e.ProgressPercentage;
-                DownloadProgressBar.Tick(string.Format("downloaded {0} from {1}", e.BytesReceived / 1024, e.TotalBytesToReceive / 1024));
+                DownloadProgressBar.Tick(string.Format("Received {0}kb from {1}kb", e.BytesReceived / 1024,e.TotalBytesToReceive / 1024));
                 if (DownloadPercentage == 100)
                 {
                     DownloadProgressBar.Dispose();
