@@ -1,7 +1,7 @@
 # didoDownloader
 
 
-Console application for `download video` from https://www.dideo.ir/
+Console application for `download video` from [dideo.ir](https://www.dideo.ir/)
 
 author: @asdword
 
@@ -21,6 +21,6 @@ author: @asdword
          dido -url[dido url] -path[path save]
 
 #### License
-`didoDownloader` is MIT licensed.
+`didoDownloader` is [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
 @asdword :+1: just for fun!
