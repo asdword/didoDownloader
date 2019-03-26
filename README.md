@@ -20,7 +20,9 @@ author: @asdword
          dido -url[dido url]
          dido -url[dido url] -path[path save]
 
-#### License
-`didoDownloader` is [MIT License](http://www.opensource.org/licenses/mit-license.php).
+# License
+
+`didoDownloader` is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+
 
 @asdword :+1: just for fun!
