@@ -1,11 +1,11 @@
 # didoDownloader
 
 
-Console application for download video from https://www.dideo.ir/
+Console application for `download video` from https://www.dideo.ir/
 
 author: @asdword
 
- parameters :
+#### Parameters :
 
          -h              Show Dido Help
          -ver            Show Version
@@ -15,9 +15,12 @@ author: @asdword
          -qul            Try to get hight video resolution
          -key            By default videoSourceUrl
 
- samples:
+#### Usage:
  
          dido -url[dido url]
          dido -url[dido url] -path[path save]
-         
+
+#### License
+`didoDownloader` is MIT licensed.
+
 @asdword :+1: just for fun!
